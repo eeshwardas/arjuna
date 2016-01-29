@@ -1,0 +1,4 @@
+clear
+echo "running Arjuna..."
+java Arjuna
+echo "done."
