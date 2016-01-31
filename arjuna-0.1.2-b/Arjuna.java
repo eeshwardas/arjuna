@@ -25,7 +25,7 @@ import java.io.IOException;
 *The amount of minutes is written to a file every
 *full minute that elapses
 *The .kala file is written to once a minute.
-*@version 0.1.1-02
+*@version 0.1.2-b
 *@author eeshwar das
 *
 */
@@ -36,7 +36,6 @@ public class Arjuna
 
 	//main
 	public static void main( String[] args )
-			throws IOException
 	{
 		System.out.println(
 			"aum namo Arjunaya namaha" );
@@ -55,7 +54,7 @@ public class Arjuna
 	//
 	//
 	//method testController()
-	private static void testController() throws IOException
+	private static void testController()
 	{
 		long prevMinutes = getMinutesSinceConstruction();
 		long curMinutes = prevMinutes;
@@ -101,14 +100,20 @@ public class Arjuna
 	//
 	//
 	//method writeKalaToFile()
-	private static void writeKalaToFile() throws
-				IOException
+	private static void writeKalaToFile()
 	{
-		PrintWriter out = new PrintWriter(
-			".kala", "UTF-8" );
-		out.println(
-			getMinutesSinceConstruction() );
-		out.close();
+		try
+		{
+			PrintWriter out = new PrintWriter(
+				"kala", "UTF-8" );
+			out.println(
+				getMinutesSinceConstruction() );
+			out.close();
+		}
+		catch( IOException e )
+		{
+			System.out.println( e );
+		}
 	}
 
 
