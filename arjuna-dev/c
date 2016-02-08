@@ -1,0 +1,4 @@
+clear
+echo "compiling Arjuna.java..."
+javac Arjuna.java
+echo "done."
