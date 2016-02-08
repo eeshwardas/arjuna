@@ -8,7 +8,7 @@ import java.io.IOException;
 /**
 *
 *Arjuna is the conqueror of sleep.  Wherever there is Krishna
-*and Arjuna, there is assured victory.
+*and Arjuna, there is assured sweet loving victory.
 *The Arjuna class thusfar is being designed to be a timekeeper
 *that can run on multiple platforms.
 *The implementation has become that the program runs
@@ -27,7 +27,7 @@ import java.io.IOException;
 *The amount of minutes is written to a file every
 *full minute that elapses
 *The .kala file is written to once a minute.
-*@version 0.1.2-b
+*@version 0.1.3
 *@author eeshwar das
 *
 */
